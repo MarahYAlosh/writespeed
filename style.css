@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+
+}
+:root{
+  --main-color: #2196f3;
+}
+
+body {
+  font-family: Tahoma, Arial;
+  margin: 0;
+  background-color: #e5e5e59c;
+}
+
+
+.game{
+  background-color: #eee;
+  min-height: 100vh;
+
+}
+
+.container{
+  margin: auto;
+  max-width: 900px;
+}
+.name{
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.message{
+  background-color: white;
+  margin: 15px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 4px;
+}
+.message span{
+  font-weight: bold;
+  color: #009688;
+
+}
+.message span::before{
+  content: ' [ ';
+}
+
+
+.message span::after{
+  content: ' ] ';
+}
+.start{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  margin: 25px 0;
+}
+.the-word{
+  font-size: 60px;
+  text-align: center;
+  user-select: none;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.input{
+  margin: 15px auto;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+input[name = 'level']{
+  width: 21px;
+  height: 22px;
+}
+.input:focus{
+  outline: none;
+}
+.upcoming-words{
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div{
+  background-color: var(--main-color);
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  margin: 4px;
+  border-radius: 6px;
+}
+.control{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+}
+.control span{
+  font-weight: bold;
+  color: #009688;
+}
+.finish{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 20px;
+}
+.finish .good{
+  color: var(--main-color);
+}
+.finish .bad{
+  color: red;
+}
+
+.conInput{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputName{
+  margin: 15px auto;
+  width: 50%;
+  display: block;
+  padding: 15px;
+  border: 3px solid #009688;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: #009688;
+}
+.inputName:focus{
+  outline: none;
+}
+.conInput > div{
+  padding: 4px 30px;
+  margin: 5px 13px;
+  font-size: 30px;
+  color: #333;
+
+}
+
+
